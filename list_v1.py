@@ -108,6 +108,9 @@ class Mylist:
     def sum_numbers_digits(self,l:list):
         total_sum = sum(sum(int(digit) for digit in str(number)) for number in l)
         return total_sum
+    
+    def break_list_size_N(self,a:list,n):
+        return [a[i:i + n] for i in range(0, len(a), n)]
         
     
     
